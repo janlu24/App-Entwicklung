@@ -15,8 +15,17 @@ Inkludieren einer anderen URLconf
     2. URL zu urlpatterns hinzufügen:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+from core.views import dashboard_view
 
 urlpatterns = [
+    # Admin Interface
     path('admin/', admin.site.urls),
+    
+    # Dashboard (Root)
+    path('', dashboard_view, name='dashboard'),
+    
+    # AI Engine (Chat)
+    path('ai/', include('apps.ai_engine.urls')),
 ]
+

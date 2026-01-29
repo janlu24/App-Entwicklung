@@ -144,6 +144,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
+    BASE_DIR / 'core' / 'static',  # Für Tailwind CSS Output
 ]
 STATIC_ROOT = BASE_DIR / 'staticfiles'  # Für Produktion collectstatic
 

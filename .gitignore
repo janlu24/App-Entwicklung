@@ -84,3 +84,14 @@ Thumbs.db
 /media/documents/
 # Generated reports
 /reports/temp/
+
+# Node.js / Frontend Build
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Tailwind CSS Build Output
+core/static/core/css/output.css
+

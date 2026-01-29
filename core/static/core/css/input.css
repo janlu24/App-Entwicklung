@@ -1,0 +1,32 @@
+/* Tailwind CSS Input-Datei für AI-First ERP */
+
+/* Base Layer - Tailwind's Reset und Base-Styles */
+@tailwind base;
+
+/* Components Layer - Wiederverwendbare Komponenten-Klassen */
+@tailwind components;
+
+/* Utilities Layer - Utility-Klassen */
+@tailwind utilities;
+
+/* Custom Styles können hier hinzugefügt werden */
+@layer base {
+  /* Beispiel: Custom Font-Family */
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  /* Beispiel: Custom Button-Komponente */
+  /* .btn-primary {
+    @apply px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors;
+  } */
+}
+
+@layer utilities {
+  /* Beispiel: Custom Utility-Klassen */
+  /* .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  } */
+}
